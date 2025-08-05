@@ -74,7 +74,7 @@ client = SecureAPIClient()
 apis = client.get_apis()
 
 # Global variables
-watermark = "PIKACHU"  # Default value
+watermark = "ADITYA"  # Default value
 count = 0
 userbot = None
 timeout_duration = 300  # 5 minutes
@@ -562,7 +562,7 @@ async def txt_handler(bot: Client, m: Message):
     # Define watermark variable based on input
     global watermark
     if raw_textx == '/d':
-        watermark = "PIKACHU"
+        watermark = "ADITYA"
     else:
         watermark = raw_textx
     
