@@ -414,9 +414,11 @@ async def download_video(url, cmd, name):
                     split_files = await split_file(output_file)
                 if len(split_files) > 1:
                     return split_files
-                    break
                 else:
-                    return [output_file]
+                     return [output_file]
+                else:
+                     return [output_file]
+
             
             if not success:
                 print(f"\n⚠️ Retry {retry_count + 1}...")
